@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: #4e4f50;
   /* 2 */
 }
 
@@ -771,11 +771,11 @@ video {
 }
 
 .w-\[0p\%\] {
-  width: 0p%;
+  width: 0%;
 }
 
 .w-\[50p\%\] {
-  width: 50p%;
+  width: 50%;
 }
 
 .w-\[200\] {
