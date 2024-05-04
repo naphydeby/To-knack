@@ -6,36 +6,40 @@
     <title>Login</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-gradient-to-r from-purple-800 to-white">
-<div class="flex py-10 px-20"> 
-    <div class="slider rounded-tl-[20px] rounded-bl-[20px]"> </div>
+<body class="bg-white">
+<div class="lg:flex py-10 lg:px-20"> 
+    <div class="hidden lg:block slider rounded-[25px]"> </div>
     
-    <div class="lg:w-[50%] lg:h-[680px] l shadow-2xl bg-white lg:bg-white rounded-tr-[20px] rounded-br-[20px] lg:pt-1 lg:pl-20 lg:mt- ">
-        <h1 class=" lg:mt-[8px] lg:mb-6 lg:pt-16  text-5xl font-[700]">Login</h1>
+    <div class="lg:w-[50%] w-[100vw] lg:h-[685px] lg:shadow-2xl bg-white lg:bg-white rounded-[25px] lg:ml-10 ">
+        <h1 class=" lg:mt-[8px] lg:mb-6 lg:pt-16 text-center text-purple-800 text-5xl font-[700]">Login</h1><br><br class="hidden md:block lg:hidden">
        
-       <div class="">
-           <p class="text-[500]">Don't have an account? <a href="createaccount.html"><b class="ml-4 text-purple-800">Create an accoount</b></a></p>
+       <div class="lg:pl-8 px-6 md:mx-10">
+           <p class="text-[500]">Don't have an account? <a href="createaccount.html"><b class="ml-2 lg:ml-4 text-purple-800">Create an accoount</b></a></p>
            <p class="mt-2">it will take less than a minute.</p>
        </div>
     
-        <form action="" class="mt-12 lg:float-left lg:ml-0 md:ml-[130px] ml-4">
+        <form action="" class="px-6 lg:w-[100%] mt-12 lg:float-left lg:ml-0 lg:pl-16 md:mx-12 ml-4">
     
-            <input class="w-[94.5%] lg:ml-2 lg:w-[510px] lg:h-[55px] md:w-[80%] mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 border-t-0 border-r-0 border-l-0 rounded-none placeholder:text-purple-800 outline-none pl-4 text-lg placeholder:text-[20px] font-[500]" type="text" placeholder="Username" required id=""><br><br><br>
+            <div class="w-[100%] flex gap-1 lg:ml-2 lg:w-[95%] lg:h-[55px] md:w-[100%] border-t-0 border-r-0 border-l-0 rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-gray-400 outline-none pl-4 text-lg placeholder:text-[15px] font-[500]">
+                <img class="w-[20px] h-[20px] mt-[14px]" src="./asset/user.png" alt="user">
+                <input class="outline-none flex-1" type="text" name="" required id="" placeholder="Username">
+            </div><br><br><br>
     
-            <input class="w-[94.5%] lg:ml-2 lg:w-[510px] lg:h-[55px] md:w-[80%] lg:border-t-0 lg:border-r-0 lg:border-l-0 lg:rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-purple-800 outline-none pl-4  rounded-lg text-lg placeholder:text-[20px] font-[500]" type="password" placeholder="Password" required id=""><br><br><br>
-    
-            <div class="flex">
-                <button class="w-[150px] md:w-[141px] h-[50px] text-center border-2 font-[700] text-lg shadow text-white bg-purple-800 ml-[28%] lg:ml-[1%] md:ml-[28%] md:mt-10 lg:mt-0 rounded-[10px]">Login</button>
+            <div class="w-[100%] flex gap-1 lg:ml-2 lg:w-[95%] lg:h-[55px] md:w-[100%] border-t-0 border-r-0 border-l-0 rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-gray-400 outline-none pl-4 text-lg placeholder:text-[15px] font-[500]">
+                <img class="w-[20px] h-[20px] mt-[14px]" src="./asset/padlock.png" alt="user">
+                <input class="outline-none flex-1" type="password" name="" required id="" placeholder="Password">
+            </div><br>
 
-                <div class="float-right ml-[200px] flex mt-4">
-                    <input class="w-4 h-4" type="checkbox" name="" id="">
-                    <h2 class="text-[500] mt-[-4px] ml-2">Remember Password</h2>
-                </div>
+            <a class="mt-2 font-[400] lg:pr-4 float-right" href="#">Forgot Your Password?</a>
+            <br><br><br><br>
+
+            <div class="">
+                <button class="w-[150px] md:w-[141px] h-[50px] text-center border-2 font-[700] text-lg shadow text-white bg-purple-800 ml-[25%] lg:ml-[38%] md:ml-[40%] md:mt-10 lg:mt-0 rounded-[10px]">Login</button>
     
             </div><br><br><br>
 
-            <a class="mt-10 font-[500] lg:ml-[35%]" href="#">Forgot Your Password?</a>
-    
+           
+
         </form>
     
     
