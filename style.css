@@ -6,7 +6,13 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
+body{
+      overflow-x: hidden;
+}
 .tonack{
       font-family: 'Bodoni Moda';
 }
@@ -86,3 +92,98 @@
       height: 100vh; /* Set height to full viewport height */
 
 }
+/* .slider-wrapper{
+      background-image: url(/asset/lsve.jfif);
+      background-size: cover;
+} */
+.profile-desc{
+      background:rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(5px);
+      width: 300px;
+
+}
+
+.header2{
+      position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/perfect\ girl.avif);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/perfect\ girl.avif
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.header .container {
+      position: relative;
+      height: 100%;
+    }
+    
+    .header .header-content {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 55%;
+      background-color: red;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      color: #fff;
+    }
+
+    .header .header-content .header-title {
+      font-size: calc(40px + (120 - 40) * ((100vw - 600px) / (1600 - 600)));
+      font-weight: bold;
+      line-height: .7;
+      margin-bottom: 25px;
+      color: inherit;
+    }
+    .header-title-cont{
+      position: inherit;
+      width: 50vw;
+    }
+   
+
+    .cedarville-cursive-regular {
+      font-family: "Cedarville Cursive", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .briem-hand-font {
+      font-family: "Briem Hand", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .calligraffitti-regular {
+      font-family: "Calligraffitti", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .sexy-ladies img{
+       width: 250px;
+       height:300px;
+       margin-top: 30px;
+       border-radius: 20px;
+    }
+
+    .sexybg{
+      width: 250px;
+    }
+    .exotic-women{
+      width: 300px;
+      height:300px;
+      object-fit: cover;
+    }
+    @media (max-width:768px) {
+      .header-title-cont{
+            width: 90vw;
+      }
+      .sexy-ladies img{
+            width: 60vw;
+            object-fit: cover;
+      }
+    }
