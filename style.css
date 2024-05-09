@@ -170,6 +170,7 @@ body{
        border-radius: 20px;
     }
 
+    
     .sexybg{
       width: 250px;
     }
@@ -186,4 +187,15 @@ body{
             width: 60vw;
             object-fit: cover;
       }
+    }
+    .footer{
+      position: relative;
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(asset/nikki.webp);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(71, 5, 88, 0.5)), url(asset/nikki.webp
+      );
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: black;
     }
