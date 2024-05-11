@@ -187,6 +187,21 @@ body{
             width: 60vw;
             object-fit: cover;
       }
+      .profile-desc{
+            width: 300px;
+      }
+    }
+    @media (max-width: 399px) {
+      .profile-desc{
+            width: 280px;
+      }
+      
+    }
+    @media (max-width: 366px) {
+      .profile-desc{
+            width: 250px;
+      }
+      
     }
     .footer{
       position: relative;
