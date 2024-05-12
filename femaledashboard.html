@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="lg:bg-gradient-to-r from-purple-800 to-white">
+
+    <div class="">
+        <div class="w-[]">
+            <nav class="fixed flex justify-between px-4 w-[100vw] h-[65px] shadow-2xl">
+                <h1 class="text-2xl font-[500] mt-4" id="a">To-Knack</h1>
+
+                <img  class="w-8 h-8 ml-[215px] mt-4" onclick="menuImg()" src="/asset/menu.png" alt="menu" id="menu">
+
+                <div class="flex ">
+                    <ul class="hidden text-xl font-[500] ml-[-16px] pt-20 bg-purple-800 w-[100vw] pl-8 h-[100vh]" id="info">
+                        <a href="#">
+                            <div class="flex gap-2 text-2xl text-white font-[500]">
+                                <img class="w-10 h-10 mt-2 rounded-[20px]" src="/asset/1 (1).webp" alt="pic">
+                                <li class="pt-2">Profile</li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex gap-2 text-2xl mt-4 text-white font-[500]">
+                                <img class="w-10 h-10 mt-2 rounded-[20px]" src="/asset/1 (1).webp" alt="pic">
+                                <li class="pt-2">Upload Video/Image</li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex gap-2 mt-4 text-2xl text-white font-[500]">
+                                <img class="w-10 h-10 mt-2 rounded-[20px]" src="/asset/1 (1).webp" alt="pic">
+                                <li class="pt-2">My Hookup</li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex gap-2 mt-4 text-2xl text-white font-[500]">
+                                <img class="w-10 h-10 mt-2 rounded-[20px]" src="/asset/1 (1).webp" alt="pic">
+                                <li class="pt-2">Update Profile</li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex gap-2 mt-4 text-2xl text-white font-[500]">
+                                <img class="w-10 h-10 mt-2 rounded-[20px]" src="/asset/1 (1).webp" alt="pic">
+                                <li class="pt-2">Notification</li>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex gap-2 mt-4 text-2xl text-white font-[500]">
+                                <img class="w-10 h-10 mt-2 rounded-[20px]" src="/asset/1 (1).webp" alt="pic">
+                                <li class="pt-2">Logout</li>
+                            </div>
+                        </a>
+                        
+                    </ul>
+
+                    <img class=" w-8 h-8 mt-8 ml-[-60px]" onclick="cancelImg()" src="/asset/cancel.png" alt="cancel" id="cancel">
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        function menuImg(){
+            let menu = document.getElementById("menu");
+            let cancel = document.getElementById("cancel");
+            let info = document.getElementById("info");
+            let a = document.getElementById("a");
+
+
+            document.getElementById("menu").classList.add("hidden");
+            document.getElementById("cancel").classList.remove("hidden");
+            document.getElementById("info").classList.remove("hidden");
+            document.getElementById("a").classList.add("hidden");
+        }
+
+        function cancelImg(){
+            let menu = document.getElementById("menu");
+            let cancel = document.getElementById("cancel");
+            let info = document.getElementById("info");
+            let a = document.getElementById("a");
+
+
+            document.getElementById("menu").classList.remove("hidden");
+            document.getElementById("cancel").classList.add("hidden");
+            document.getElementById("info").classList.add("hidden");
+            document.getElementById("a").classList.remove("hidden");
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
