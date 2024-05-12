@@ -9,7 +9,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body  >
-    <div class="bg-purple-300 w-[100%]  sm:h-[550px] md:h-[550px]  lg:h-[557px] xl:h-[640px]   ">
+    <div class="bg-purple-300 w-[100%]  h-screen      ">
         
         <!-- search bar -->
         <div class=" flex   text-purple-800 pt-[20px] lg:pt-[40px] " >
@@ -28,66 +28,87 @@
         </div>
         <!-- End of search bar -->
         <div class="block lg:flex xl:flex">
-        <div class="hidden lg:block xl:block w-[80%] lg:w-[20%] xl:w-[20%] h-[400px] lg:h-[400px] xl:h-[500px] bg-purple-800 mt-[20px] ml-[20px]  pl-[40px] text-white pt-[40px]  " id="dashboard" style="border-top-left-radius: 70px;">
+        <div class="hidden lg:block xl:block w-[80%] lg:w-[20%] xl:w-[20%] h-[400px] lg:h-[450px] xl:h-[500px] bg-purple-800 mt-[20px] ml-[20px]  pl-[40px] text-white pt-[40px]  " id="dashboard" style="border-top-left-radius: 70px;">
             <div class="flex  hover:font-[700] hover:text-[20px]"><ion-icon name="home-outline" class="mt-9"></ion-icon><p class="ml-2 mt-[30px]"> Home</p></div>
             <a href="dashboard.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><img src="dating-imgages/falz.jpeg" alt="" class="w-[20px] h-[20px] rounded-[50px] mt-1   "><p class="ml-2"> Profile</p></div></a>
-            <a href=""><div class="flex  hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon name="videocam-off-outline" class=" mt-1"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
+            <a href="upload.html"><div class="flex  hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon name="videocam-off-outline" class=" mt-1"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
             <a href="hookup.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon class="mt-1 " name="car-outline"></ion-icon><p class="ml-1"> My Hookup</p></div></a>
             <a href="update.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Update Profile</p></div></a>
             <a href="notification.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Notification</p></div></a>
+            <a href="Report.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Report</p></div></a>
             <a href="logout.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
         </div>
         <div id="search" class="block lg:hidden xl:hidden">
         <input type="text" placeholder="search" class=" block lg:hidden xl:hidden mt-[0px] w-[50%] h-[50px] rounded-[50px] pl-[60px] ml-[80px] md:ml-[120px]  lg:w-[600px]   text-purple-800 placeholder:text-2xl  font-[700] outline-none">
         <ion-icon name="search-outline" class=" block lg:hidden xl:hidden mt-[-30px] ml-[100px] md:ml-[560px]" ></ion-icon>
         </div>
-        <div class=" block pt-[20px] lg:pt-[0px] xl:pt-[0px] ml-[20px] lg:ml-[20px] xl:ml-[20px] mt-[40px] lg:mt-[20px] xl:mt-[20px]  w-[80%]  lg:w-[75%] xl:w-[75%] h-[380px] md:h-[360px] lg:h-[400px] xl:h-[500px] bg-white rounded-[20px] " id="profile"  > 
-       <div class="flex  lg:pt-[40px] xl:pt-[40px] ml-[40px] ">
-        <ion-icon name="trash-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
-        <ion-icon name="stats-chart-outline" class="text-purple-800 w-[20px] h-[20px] ml-[10px] lg:ml-[20px] xl:ml-[20px]"></ion-icon>
-        <ion-icon name="person-outline" class="text-purple-800 w-[20px] h-[20px] ml-[10px] lg:ml-[20px] xl:ml-[20px]"></ion-icon>
-        <ion-icon name="videocam-off-outline" class="w-[20px] h-[20px] text-purple-800 ml-[10px] lg:ml-[20px] xl:ml-[20px]"></ion-icon>
-        <ion-icon name="globe-outline" class="text-purple-800 ml-[300px] md:ml-[410px] w-[20px] h-[20px] lg:ml-[450px] xl:ml-[610px] "></ion-icon>
-        <ion-icon name="mail-open-outline" class="ml-[10px] text-purple-800 w-[20px] h-[20px] lg:ml-[20px] xl:ml-[20px] "></ion-icon>
-        <ion-icon name="notifications-outline" class=" ml-[10px] text-purple-800 w-[20px] h-[20px] lg:ml-[20px] xl:ml-[20px]" ></ion-icon>
-         </div>
-            <p class=" ml-[40px] lg:ml-[130px] xl:ml-[130px] mt-[10px]  lg:mt-[20px] xl:mt-[20px] text-purple-800 text-2xl"> My hookup</p>
+        <div class=" block pt-[20px] lg:pt-[0px] xl:pt-[0px] ml-[20px] lg:ml-[20px] xl:ml-[20px] mt-[40px] lg:mt-[20px] xl:mt-[20px]  w-[80%]  lg:w-[75%] xl:w-[75%] h-[550px] lg:h-[450px] xl:h-[500px] bg-white rounded-[20px] overflow-scroll   " id="profile"  > 
+            <div class="flex justify-between  lg:pt-[10px] xl:pt-[10px] pl-[10px] min-w-full container   ">
+                <div >
+                <ion-icon name="trash-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+                <ion-icon name="stats-chart-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+                <ion-icon name="person-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+                <ion-icon name="videocam-off-outline" class="w-[20px] h-[20px] text-purple-800 "></ion-icon>
+        
+            </div>
+                   <div class=" pr-[25px]  ">
+                <ion-icon name="globe-outline" class="text-purple-800  w-[20px] h-[20px]  "></ion-icon>
+                <ion-icon name="mail-open-outline" class=" text-purple-800 lg:w-[20px] lg:h-[20px]  "></ion-icon>
+                <ion-icon name="notifications-outline" class="  text-purple-800 lg:w-[20px] lg:h-[20px] " ></ion-icon>
+            </div>
+            </div>
+               
+            <p class=" ml-[40px] lg:ml-[130px] xl:ml-[130px] mt-[10px]  lg:mt-[20px] xl:mt-[20px] text-purple-800 text-2xl">My Hookup</p>
             <!-- image div -->
-            <div class="flex justify-between pt-[70px]">
-             <div class=" ml-[20px]">
-                <img src="asset/pexels-darcy-delia-345397-950758.jpg" alt="" class="w-[150px] h-[150px] rounded-[50%]">
-                <div class="mt-[10px] pl-[30px] ">
+            <div class=" block lg:flex xl:flex h-full justify-between pt-4 lg:pt-[70px] xl:pt-[70px]   ">
+             <div class=" ml-[20px] flex lg:block">
+                
+                <img src="asset/pexels-darcy-delia-345397-950758.jpg" alt="" class="w-[100px] h-[100px] lg:h-[150px] lg:w-[150px] rounded-[50%]">
+                <div class="mt-[30px] lg:mt-[10px] lg:pl-[30px]  text-purple-800 ml-4 lg:ml-0">
+
                     <p>Amaka Obi</p>
                     <p>20 years</p>
                     <p>Gbagada</p>
+                    
                   </div>
              </div>
-             <div>
-                <img src="asset/21786964_019_dcf3.jpg" alt="" class="w-[150px] h-[150px] rounded-[50%]" >
-                <div class="mt-[10px] pl-[30px] ">
+
+             <div class=" ml-[20px] flex lg:block mt-[10px] lg:mt-0" >
+                <img src="asset/21786964_019_dcf3.jpg" alt="" class="w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] rounded-[50%]" >
+                <div class="mt-[30px] lg:mt-[10px] lg:pl-[30px]  text-purple-800 ml-4 lg:ml-0" >
+
                     <p>Aisha Jubril</p>
                     <p>24 years</p>
                     <p>Festac Town</p>
+                    
                   </div>
              </div>
-             <div>
-                <img src="asset/74504689_006_1005.jpg" alt="" class="w-[150px] h-[150px] rounded-[50%]" >
-                <div class="mt-[10px] pl-[30px] ">
+             <div class=" ml-[20px] flex lg:block mt-[10px] lg:mt-0">
+                <img src="asset/74504689_006_1005.jpg" alt="" class="w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] rounded-[50%]" >
+                <div class="mt-[30px] lg:mt-[10px] lg:pl-[30px]  text-purple-800 ml-4 lg:ml-0">
+
                   <p>Kemi Olaiya</p>
                   <p>25 years</p>
                   <p>Ikorodu</p>
+                  
+                  
                 </div>
                </div>
-             <div class="mr-[30px]">
-                <img src="asset/59096524_007_746a.jpg" alt="" class="w-[150px] h-[150px] rounded-[50%]">
-                <div class="mt-[10px] pl-[30px]">
+             <div class="lg:mr-[30px] ml-[20px] lg:ml-0 flex text-purple-800 lg:block mt-[10px] lg:mt-0 ">
+                <img src="asset/59096524_007_746a.jpg" alt="" class="w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] rounded-[50%]">
+                <div class="mt-[10px] pl-[30px] ">
+
                     <p>Glory Mbong</p>
                     <p>28 years</p>
-                    <p>Mile-2</p>
+                      <p>Mile-2</p>                  
+    
+                
+
                   </div>
              </div>
             </div>
             <!-- End of image div -->
+            
              </div>
             </div>
     </div>
