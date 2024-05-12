@@ -21,33 +21,43 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
   
 </head>
 <body class="">
        <header class="header2">
-            <nav class="flex w-[98vw]   mx-2 md:mx-5 py-2  absolute justify-between">
+            <nav class="flex w-[98vw]   mx-2 md:mx-5 py-3  justify-between ">
                   <div class="flex px-0 space-x-0 md:space-x-2 md:items-center">
-                        <img src="./asset/logo-removebg-preview.png" alt="" class=" w-[50px] h-[40px] sm:w-[80px]">
-                        <h1 class="font-bold text-lg sm:text-3xl text-purple-700 animate-pulse jersey-15-regular dm-sans-regular" >To Nack</h1>
+                        <img src="./asset/logo-removebg-preview.png" alt="" class="cursor w-[50px] h-[40px] sm:w-[80px]">
+                        <h1 class="font-bold text-lg sm:text-3xl cursor-pointer text-purple-700 animate-pulse jersey-15-regular dm-sans-regular" role="button" >To Nack</h1>
                   </div>
                  
-                  <div class=" space-x-10 mx-5 items-center flex">
-                    <div class="hidden md:flex space-x-10">
+                  <div class=" space-x-10 mx-5 items-center hidden md:flex" id="navContent">
+                    <div class=" space-x-10">
                         <a href="#" class="font-semibold text-md hover:text-purple-300 text-purple-400">Home</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Contact</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Blog</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Privacy</a>
+                     </div>
+                    <a href="gendervalidation.html">
+                    <button class="mr-5 text-white  rounded-xl text-xs md:text-md md:rounded-full bg-gradient-to-r from-purple-600 to-pink-400 border-2 border-purple-600  font-semibold px-5 py-1 md:py-3 text-center w-[100px] md:w-[180px] height-[60px] hover:opacity-7">Get Started</button>
+                    </a>
                   </div>
-                  <a href="gendervalidation.html">
-                        <button class="mr-5 text-white rounded-xl text-xs md:text-md md:rounded-full bg-gradient-to-r from-purple-600 to-pink-400 border-2 border-purple-600  font-semibold px-5 py-1 md:py-3 text-center w-[100px] md:w-[180px] height-[60px] hover:opacity-75 ">Get Started</button>
-                  </a>
-                  </div>
-             </nav>
+
+                  <!-- <div>
+                    <a class=" cursor-pointer md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
+                      see more</a>
+                  </div> -->
+                   <button class="text-white flex md:hidden mx-8 animate-pulse cursor-pointer" onclick="openNav()" id="dropBtn" role="button">
+                  
+                   <img width="48" height="64" src="https://img.icons8.com/wired/64/FFFFFF/xbox-menu.png" alt="xbox-menu" role="button" />
+                  </button> 
+               
+            </nav>
 
 
              <section class="header-content absolute  mx-3 sm:mx-10">
-
-
                   <div class=" space-y-8 header-title-cont px-0 sm:px-8 ">
                         <!-- <p class="font-bold more">Free HookUp Site for Nigerian Adults</p>  -->
                         <h1  class="calligraffitti-regular mt-44 text-5xl  sm:text-6xl font-bold text-purple-400 dm-sans-regular header-title " id="el">  </h1>
@@ -56,7 +66,7 @@
                               
                         </div>
                         <div class="flex relative w-[300px] place-items-center ">
-                              <input type="text" placeholder="Search ladies preferences" class=" w-[70vw] md:w-[300px] text-[13px] sm:text-md  h-[48px] border-2 rounded-full px-5 border-purple-600 absolute">
+                              <input type="text" placeholder="Search ladies preferences" class=" text-black  w-[70vw] md:w-[300px] text-[13px] sm:text-[17px] h-[48px] border-2 rounded-full px-5 border-purple-600 absolute">
                               <img   src="https://img.icons8.com/nolan/64/search.png" alt="search" class=" placeholder:text-xs absolute w-[25px] sm:w-[30px] mx-[57vw] sm:mx-[60vw] md:mx-[85%]"/>
                         </div>
                         
@@ -222,17 +232,7 @@
         </div>
   </section>
        
-
- 
-
-
-
-
-
-
-
-
-        
+  
           
 
   <section class=" overflow-x-hidden photo-group-3  py-8 w-screen bg-black ">
@@ -375,7 +375,7 @@
       </div>
   </div>
   <div>
-    <a class=" ml-[60%] md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
+    <a class=" ml-[60%] cursor-pointer md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
       see more</a>
   </div>
 </section>
@@ -585,7 +585,14 @@
             }
         }
     });
+    const dropd = document.getElementById('navContent')
+    const button =document.getElementById('dropBtn')
 
+    function openNav (){
+      console.log('start')
+      dropd.classList.toggle('mobilenav')
+    }
+    
 
     </script>
            

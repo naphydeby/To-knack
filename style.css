@@ -214,3 +214,10 @@ body{
       background-attachment: fixed;
       color: black;
     }
+ 
+    .mobilenav{
+      display: block;
+      flex-direction: column;
+      background-color: black ;
+  
+     }
