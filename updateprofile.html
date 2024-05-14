@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Female Dashboard</title>
+    <title>Update Profile</title>
     <link rel="stylesheet" href="./src/output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     
 </head>
-<body>
-    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px] ">
+<body  >
+    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px]  ">
         
         <!-- search bar -->
         <nav class="flex text-white pt-[20px] lg:pt-[40px] " >
-            <div class="flex">   
+            <div class="flex">
                 <img onclick="menuBtn()" class="w-8 h-8 ml-[40px] lg:hidden" id="menu" src="/asset/menu.png" alt="menu">
 
                 <h1 class=" animate-bounce  pt-[8px] text-purple-800 text-3xl pl-[110px] lg:text-4xl lg:pl-[30px] lg:w-[20vw] font-[700]  " >  TO-KNACK</h1>
@@ -31,9 +31,9 @@
         <!-- End of search bar -->
 
 
-        <div class="lg:flex gap-1 justify-between">
+        <div class="flex gap-1 justify-center lg:justify-between">
 
-            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-4 md:ml-8 lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
+            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-[-70px] md:ml-[-353px] lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
 
                 <a class="flex  text-white ml-4 font-[700] text-[20px]">
                     <ion-icon name="home-outline" class="mt-[-5px] w-10 h-10"></ion-icon>
@@ -56,9 +56,10 @@
             </div>
 
             <div class="" id="content">
-                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] md:[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+                    
 
-                    <div class="">
+                    <div class="" >
 
                         <div class="flex justify-center  lg:justify-between pt-6 px-20">
                             <div class="flex gap-4">
@@ -97,43 +98,81 @@
       
                         </div>
 
-                        <div class="lg:flex justify-center lg:px-10">
-                           <div class=" text-center">
-                               <p class=" mt-[30px] text-white text-3xl font-[500]">Profile</p><br>
-    
-                               <img src="/asset/1 (1).webp" alt="pic" class=" mt-[20px] w-[300px] mx-[auto] md:mx-[auto] lg:w-[300px] h-[300px] lg:h-[300px] rounded-[300px]">
-    
-                               <div class="flex justify-center gap-2">
-                                  <p class="  mt-[10px]  text-white"> Status: <b>Available</b></p>
-                                   <p class="w-[10px] h-[10px] mt-[20px] bg-green-600 rounded-[25px]"></p>
+                        <div class="">
+                           <div class="">
+                               <div class="">
+                                   <p class=" mt-[20px] text-center lg:mx-0 text-white text-3xl font-[500]">Update Profile</p>
                                </div>
                            </div>
-                    
-                           <div class="lg:mt-32 lg:ml-20 mt-4 pl-8 lg:mr-[300px]">
-                               <h2 class=" text-white text-[20px]"> <b>About</b></h2>
 
-                               <div class="">
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] text-white lg:w-[260px]">Name: &nbsp; Alice Felicia</p>
-
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md text-white w-[90%] md:w-[95%] lg:w-[260px]">Date Applied: &nbsp; 21st April, 2023.</p>
-
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 w-[90%] rounded-md md:w-[95%] text-white lg:mt-[10px] lg:w-[260px]">Location:  &nbsp; Ikorodu, Lagos.</p>
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] text-white lg:mt-[10px] lg:w-[260px]">Age:  &nbsp; 24</p>
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] lg:w-[260px] text-white lg:mt-[10px]">Email:  alicefelicia@gmail.com</p>  
-                               </div>  
+                           <form action="" class="pl-8 text-white  md:pt-16 lg:pt-8 pt-10">
+                            <div class="md:flex md:mt-4 md:gap-4">
+              
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/user.png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Firstname">
+                                </div><br class="block md:hidden">
+              
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/user.png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Lastname">
+                                </div><br class="block md:hidden">
                            </div>
+              
+                            <div class="md:flex md:mt-8 lg:mt-4 md:gap-4">
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/briefcase (1).png" alt="Occupation">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Occupation"><br class="block md:hidden"><br class="block md:hidden">
+                                </div><br class="block md:hidden">
+              
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/location (1).png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Location">
+                                </div><br class="block md:hidden">
+                           </div>
+              
+                          <div class="md:flex md:mt-8 lg:mt-4 md:gap-4">
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[13px]" src="./asset/age.png" alt="user">
+                                    <input class="bg-transparent  outline-none flex-1" type="text" name="" required id="" placeholder="Age"><br class="block md:hidden"><br class="block md:hidden">
+                                </div><br class="block md:hidden">
+               
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/phone-call (1).png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Phone Number"><br class="block md:hidden"><br class="block md:hidden">
+                                </div><br class="block md:hidden">
+                            </div>
+                              
+                            <div class="flex justify-center gap-1 border-2 border-white w-[90%] md:w-[92%] h-[45px] md:h-[55px] lg:h-[50px] pl-[10px] md:mt-8 lg:mt-4 rounded-md text-lg">
+                                <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/home-address (1).png" alt="user">
+                                <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Home Address"><br class="block md:hidden"><br class="block md:hidden">
+                            </div><br class="md:hidden">
+              
+                            <div class="flex justify-center gap-1 border-2 border-white w-[90%] md:w-[92%] h-[45px] md:h-[55px] lg:h-[50px] md:mt-8 lg:mt-4 rounded-md pl-[10px] text-lg">
+                                <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/email.png" alt="user">
+                                <input class="bg-transparent outline-none flex-1" type="email" name="" required id="" placeholder="Email Address"><br class="block md:hidden"><br class="block md:hidden">
+                            </div><br><br class="lg:hidden"><br class=" lg:hidden">
+              
+                            <button class="w-[150px] md:w-[200px] ml-[25vw] md:ml-[35%] lg:ml-[40%] md:h-[50px] lg:mt-[8px] text-purple-800 h-[40px] bg-white rounded-md font-[700]">Save</button>
+
+                          </form>
+                           
                         </div>
                     </div>
                 </div>
+            
             </div>
-
-            </div>
-
         </div>
-
     </div>
+    
+           
+           
+           
+           
+            
 
     <script>
+
 
         function menuBtn() {
             const menu = document.getElementById("menu");
@@ -153,17 +192,9 @@
             document.getElementById("content").classList.remove("hidden");
             document.getElementById("menubar").classList.add("hidden");
        }
-        
+       
 
-
-        
-        // menu.addEventListener("click", function(){
-        //     dashboard.classList.toggle("hidden");
-        //     search.classList.toggle("hidden");
-        //     profile.classList.toggle("hidden");
-        // })
        
     </script>
-
 </body>
 </html>

@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
     <script src="Tailwind/tailwind.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -27,21 +25,20 @@
             <ion-icon name="notifications-outline" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800 ml-[45px] mt-[10px]" ></ion-icon>
             <ion-icon name="logo-wechat" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800  ml-[10px] mt-[10px]"  ></ion-icon>
        
-         <img src="asset/falz.jpeg" alt="" class=" hidden lg:block xl:block w-[30px] h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
+         <img src="dating-imgages/falz.jpeg" alt="" class=" hidden lg:block xl:block w-[30px] h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
         
         </div>
         <!-- End of search bar -->
         <div class="block lg:flex xl:flex ">
         <div class="hidden lg:block xl:block w-[80%] lg:w-[20%] xl:w-[20%] h-screen lg:h-[500px]  bg-purple-800 mt-[20px] ml-[20px]  pl-[40px] text-white pt-[40px]  " id="dashboard" style="border-top-left-radius: 70px;">
             <div class="flex  hover:font-[700] hover:text-[20px]"><ion-icon name="home-outline" class="mt-9"></ion-icon><p class="ml-2 mt-[30px]"> Home</p></div>
-
             <a href="dashboard.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><img src="dating-imgages/falz.jpeg" alt="" class="w-[20px] h-[20px] rounded-[50px] mt-1   "><p class="ml-2"> Profile</p></div></a>
             <a href="upload.html"><div class="flex  hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon name="videocam-off-outline" class=" mt-1"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
-
             <a href="hookup.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon class="mt-1 " name="car-outline"></ion-icon><p class="ml-1"> My Hookup</p></div></a>
             <a href="update.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Update Profile</p></div></a>
             <a href="notification.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Notification</p></div></a>
             <a href="Report.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Report</p></div></a>
+
             <a href="logout.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
         </div>
         <div id="search" class="block lg:hidden xl:hidden">
@@ -64,29 +61,29 @@
         <ion-icon name="notifications-outline" class="  text-purple-800 lg:w-[20px] lg:h-[20px] " ></ion-icon>
     </div>
     </div>
-           
+    <div class=" mx-auto  min-w-[50vw]   text-purple-800 text-2xl ">
+        <p class="  text-center">Report</p></div>
+    
+    <div class=" mt-[20px] min-w-[50vw]  ">
+        <form action="" class="mx-6"   >
+            <input type="text" placeholder="Incicident" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] pl-3 focus:outline-purple-800 rounded-[5px]" ><br>
+            <input type="text" placeholder="Date of Incident" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+            <input type="text" placeholder="Name" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+            <input type="text" placeholder=" Offender's Name" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+            <input type="text" placeholder=" Offender's Id " class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]" ><br>
+            <textarea name="" id="" cols="10" rows="10"  class="border-2 border-black w-[65vw] h-[45px] lg-h-[40px] text-gray-300 my-1 pl-3 focus:outline-purple-800 rounded-[5px]" >Narration</textarea><br>
+            <button type="submit" class="border-2 border-black w-[55vw] h-[45px] lg-h-[40px] my-1 mx-6 rounded-2xl bg-purple-800 text-white">Submit</button>
+        </form>
+
+        
+    </div>    
            
             
-        <div class="flex  flex-col sm:flex-row items-center justify-between h-full pb-8 " >
-            <figure class="flex flex-col mx-auto " >
-            <p class=" ml-[40px] lg:ml-[130px] xl:ml-[130px]  text-purple-800 text-2xl">Profile</p>           
-            <img src="dating-imgages/falz.jpeg" alt="" class=" mt-[20px] md:mt-[20px] ml-[10px] lg:ml-[50px] w-[150px]  lg:w-[200px] xl:w-[300px]   rounded-[50%]">
-            <p class=" ml-[20px] lg:ml-[100px] xl:ml-[100px]  mt-[10px]  text-purple-800"> Status: <b>Available</b></p>
-         </figure>
-            
-            <div class="text-center   w-full sm:w-[50vw]">
-                <h2 class=" text-purple-800 text-[20px]"> <b>About</b></h2>
-                <p class="  mt-[0px] lg:mt-[10px] xl:mt-[10px]">Name: Paul Chukwuma</p>
-                <p class=" mt-[0px] lg:mt-[10px] xl:mt-[10px]">Date Applied: 21st April, 2023.</p>
-                <p class=" mt-[0px] lg:mt-[10px] xl:mt-[10px]">Location: Ikorodu, Lagos.</p>
-                <p class=" mt-[0px] lg:mt-[10px] xl:mt-[10px]">Age: 26</p>
-                <p class=" mt-[0px] lg:mt-[10px] xl:mt-[10px]">Email: chukwuma@gmail.com</p>
-                
-            </div>
-        </div>
+        
     </div>
            
     </div>
+
     <script>
         const menu = document.getElementById("menu");
         const dashboard= document.getElementById("dashboard");
@@ -99,5 +96,6 @@
         })
        
         </script>
+        
 </body>
 </html>

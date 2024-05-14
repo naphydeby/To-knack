@@ -10,16 +10,58 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body  >
-    <div class="bg-purple-300 w-[100%]  sm:h-[550px] md:h-[550px]  lg:h-[557px] xl:h-[640px]   ">
-        
-        <!-- search bar -->
-        <div class=" flex   text-purple-800 pt-[20px] lg:pt-[40px] " >
-            <div class="flex">
-                <ion-icon name="menu-outline" class="ml-[50px] w-[50px] h-[50px] lg:hidden xl:hidden" id="menu"></ion-icon>
-                <h1 class=" animate-bounce  pt-[10px] text-4xl  font-[700] pl-[50px]  ">  2-KNACK</h1>
+
+    <body  >
+        <div class="bg-purple-300 w-[100%]  h-screen   ">
+            
+            <!-- search bar -->
+            <div class=" flex   text-purple-800 pt-[20px] lg:pt-[40px] " >
+                <div class="flex px-4 space-x-10 items-center ">
+                    <ion-icon name="menu-outline" class="lg:hidden xl:hidden" id="menu"></ion-icon>
+                    <h1 class=" animate-bounce text-xl sm:text-2xl md:text-3xl  font-[700] lg:pl-[10px]  ">  2-KNACK</h1>
+                </div>
+                
+                 <input type="text" placeholder="search" class=" hidden lg:block xl:block w-[700px] h-[50px] rounded-[50px] pl-[60px]   lg:ml-[60px] lg:w-[600px] xl:ml-[140px]  text-purple-800 placeholder:text-2xl  font-[700] outline-none ">
+                <ion-icon name="search-outline" class="hidden lg:block xl:block w-[20px] h-[20px] text-purple-800 ml-[-50px] mt-[20px] font-[700]" ></ion-icon>
+                <ion-icon name="notifications-outline" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800 ml-[45px] mt-[10px]" ></ion-icon>
+                <ion-icon name="logo-wechat" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800  ml-[10px] mt-[10px]"  ></ion-icon>
+           
+             <img src="dating-imgages/falz.jpeg" alt="" class=" hidden lg:block xl:block w-[30px] h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
+            
+            </div>
+            <!-- End of search bar -->
+            <div class="block lg:flex xl:flex ">
+            <div class="hidden lg:block xl:block w-[80%] lg:w-[20%] xl:w-[20%] h-screen lg:h-[450px]   bg-purple-800 mt-[20px] ml-[20px]  pl-[40px] text-white pt-[40px]  " id="dashboard" style="border-top-left-radius: 70px;">
+                <div class="flex  hover:font-[700] hover:text-[20px]"><ion-icon name="home-outline" class="mt-9"></ion-icon><p class="ml-2 mt-[30px]"> Home</p></div>
+                <a href="dashboard.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><img src="dating-imgages/falz.jpeg" alt="" class="w-[20px] h-[20px] rounded-[50px] mt-1   "><p class="ml-2"> Profile</p></div></a>
+                <a href="upload.html"><div class="flex  hover:font-[700] hover:text-[15px] mt-[20px]"><ion-icon name="videocam-off-outline" class=" mt-1"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
+                <a href="hookup.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon class="mt-1 " name="car-outline"></ion-icon><p class="ml-1"> My Hookup</p></div></a>
+                <a href="update.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Update Profile</p></div></a>
+                <a href="notification.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Notification</p></div></a>
+                <a href="Report.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Report</p></div></a>
+    
+                <a href="logout.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
+            </div>
+            <div id="search" class="block lg:hidden xl:hidden">
+            <input type="text" placeholder="Search..." class=" block lg:hidden xl:hidden mt-5 mx-auto w-[70vw] py-2 rounded-[50px] px-8 lg:w-[600px]   text-purple-800 ">
+            <ion-icon name="search-outline" class=" block lg:hidden xl:hidden mt-[-30px] ml-[17vw] md:ml-[560px]" ></ion-icon>
             </div>
             
+
+        <div class="pt-[20px] lg:pt-[0px] xl:pt-[0px] ml-[20px] lg:ml-[20px] xl:ml-[20px] mt-[40px] lg:mt-[20px] xl:mt-[20px]  w-[80%] md:w-[75%]  lg:w-[75%] xl:w-[75%]  lg:h-[450px]   rounded-[20px] py-5 bg-white" id="profile"  > 
+           <div class="flex justify-between  lg:pt-[10px] xl:pt-[10px] pl-[10px] min-w-full container   ">
+            <div >
+            <ion-icon name="trash-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+            <ion-icon name="stats-chart-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+            <ion-icon name="person-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+            <ion-icon name="videocam-off-outline" class="w-[20px] h-[20px] text-purple-800 "></ion-icon>
+    
+        </div>
+               <div class=" pr-[25px]  ">
+            <ion-icon name="globe-outline" class="text-purple-800  w-[20px] h-[20px]  "></ion-icon>
+            <ion-icon name="mail-open-outline" class=" text-purple-800 lg:w-[20px] lg:h-[20px]  "></ion-icon>
+            <ion-icon name="notifications-outline" class="  text-purple-800 lg:w-[20px] lg:h-[20px] " ></ion-icon>
+<!-- =======
              <input type="text" placeholder="search" class=" hidden lg:block xl:block w-[700px] h-[50px] rounded-[50px] pl-[60px]   lg:ml-[60px] lg:w-[600px] xl:ml-[140px]  text-purple-800 placeholder:text-2xl  font-[700] outline-none ">
             <ion-icon name="search-outline" class="hidden lg:block xl:block w-[20px] h-[20px] text-purple-800 ml-[-50px] mt-[20px] font-[700]" ></ion-icon>
             <ion-icon name="notifications-outline" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800 ml-[45px] mt-[10px]" ></ion-icon>
@@ -28,7 +70,6 @@
          <img src="asset/falz.jpeg" alt="" class=" hidden lg:block xl:block w-[30px] h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
         
         </div>
-        <!-- End of search bar -->
         <div class="block lg:flex xl:flex">
         <div class="hidden lg:block xl:block w-[80%] lg:w-[20%] xl:w-[20%] h-[400px] lg:h-[400px] xl:h-[500px] bg-purple-800 mt-[20px] ml-[20px]  pl-[40px] text-white pt-[40px]  " id="dashboard" style="border-top-left-radius: 70px;">
             <div class="flex  hover:font-[700] hover:text-[20px]"><ion-icon name="home-outline" class="mt-9"></ion-icon><p class="ml-2 mt-[30px]"> Home</p></div>
@@ -38,74 +79,84 @@
             <a href="update profile"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Update Profile</p></div></a>
             <a href="notification.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Notification</p></div></a>
             <a href="logout.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
+ -->
         </div>
-        <div id="search" class="block lg:hidden xl:hidden">
-        <input type="text" placeholder="search" class=" block lg:hidden xl:hidden mt-[0px] w-[50%] h-[50px] rounded-[50px] pl-[60px] ml-[80px] md:ml-[120px]  lg:w-[600px]   text-purple-800 placeholder:text-2xl  font-[700] outline-none">
-        <ion-icon name="search-outline" class=" block lg:hidden xl:hidden mt-[-30px] ml-[100px] md:ml-[560px]" ></ion-icon>
         </div>
-        <div class=" block pt-[20px] lg:pt-[0px] xl:pt-[0px] ml-[20px] lg:ml-[20px] xl:ml-[20px] mt-[40px] lg:mt-[20px] xl:mt-[20px]  w-[80%]  lg:w-[75%] xl:w-[75%] h-[380px] md:h-[360px] lg:h-[400px] xl:h-[500px] bg-white rounded-[20px] " id="profile"  > 
-       <div class="flex  lg:pt-[40px] xl:pt-[40px] ml-[40px] ">
-        <ion-icon name="trash-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
-        <ion-icon name="stats-chart-outline" class="text-purple-800 w-[20px] h-[20px] ml-[10px] lg:ml-[20px] xl:ml-[20px]"></ion-icon>
-        <ion-icon name="person-outline" class="text-purple-800 w-[20px] h-[20px] ml-[10px] lg:ml-[20px] xl:ml-[20px]"></ion-icon>
-        <ion-icon name="videocam-off-outline" class="w-[20px] h-[20px] text-purple-800 ml-[10px] lg:ml-[20px] xl:ml-[20px]"></ion-icon>
-        <ion-icon name="globe-outline" class="text-purple-800 ml-[300px] md:ml-[410px] w-[20px] h-[20px] lg:ml-[450px] xl:ml-[610px] "></ion-icon>
-        <ion-icon name="mail-open-outline" class="ml-[10px] text-purple-800 w-[20px] h-[20px] lg:ml-[20px] xl:ml-[20px] "></ion-icon>
-        <ion-icon name="notifications-outline" class=" ml-[10px] text-purple-800 w-[20px] h-[20px] lg:ml-[20px] xl:ml-[20px]" ></ion-icon>
-         </div>
-            <p class=" ml-[40px] lg:ml-[130px] xl:ml-[130px] mt-[10px]  lg:mt-[20px] xl:mt-[20px] text-purple-800 text-2xl"> update Profile</p>
+        <div class=" mx-auto  min-w-[50vw]   text-purple-800 text-2xl ">
+            <p class="  text-center">Update Profile</p></div>
+        
+        <div class=" mt-[10px] min-w-[50vw]    ">
             
-            <form action="" class="ml-[15px]  lg:ml-[15px] xl:ml-[50px]  mt-[20px] rounded-[10px]">
-                <div>
-                <ion-icon name="person-outline" class="mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Name:Paul Chukwuma" class=" w-[390px] xl:w-[370px] lg:w-[313px]  md:w-[357px]  h-[40px] md:h-[50px]  lg:h-[40px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px] border-2 border-black"  required></div>
-                <div class="mt-[0px] md:mt-[-60px]  md:ml-[370px] lg:ml-[320px] xl:ml-[380px] lg:mt-[-50px] xl:mt-[-50px]">
-                <ion-icon name="person-outline" class=" lg:mr-[-45px] mr-[-30px] "></ion-icon>
-                <input type="text" placeholder="Date of Birth: 21/4/2001" class=" w-[390px] mt-[10px] xl:w-[370px] lg:w-[313px] h-[40px] md:w-[357px] md:h-[50px] lg:h-[40px] lg:ml-[15px]  rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px]  border-2 border-black" required></div>
-                <div >
-                <ion-icon name="location-outline" class="mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Location: ikorodu" class=" w-[390px] mt-[5px]  xl:w-[370px] lg:w-[313px] h-[40px] md:h-[50px] lg:h-[40px] lg:mt-[20px] md:mt-[20px] md:w-[357px]  rounded-[5px] text-purple-800 pl-[30px]  focus:outline-purple-800 placeholder:text-gray-800 text-[20px] border-2 border-black" required></div>
-               <div class="mt-[0px] md:mt-[-60px]  md:ml-[370px] lg:mt-[-50px] lg:ml-[320px] xl:ml-[380px]  xl:mt-[-50px]">
-                <ion-icon name="briefcase-outline" class="lg:mr-[-45px] mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Occupation: Banker" class="  w-[390px] mt-[10px] md:w-[357px] lg:w-[313px]  xl:w-[370px] h-[40px] md:h-[50px] lg:h-[40px] lg:ml-[15px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px]  border-2 border-black" required><br></div>
-                 <div>
-                <ion-icon name="location-outline" class="mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Home Address: 55,olorunsanu Str, itamaga, ikorodu" class=" w-[390px] mt-[10px] lg:mt-[20px] md:mt-[20px] xl:w-[755px] lg:w-[630px] md:w-[725px] h-[40px] md:h-[50px] lg:h-[40px]  rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px]  border-2 border-black" required><br></div>
-                <div >
-                <ion-icon name="location-outline" class="mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Business / Office Address: 55,olorunsanu Str, itamaga, ikorodu" class="  w-[390px] mt-[10px] lg:mt-[20px] md:mt-[20px] xl:w-[755px] lg:w-[630px] h-[40px] md:h-[50px] lg:h-[40px]  md:w-[725px]  rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px] border-2 border-black" required><br></div>
-                <div >
-                <ion-icon name="phone-portrait-outline" class="mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Phone: 08034567891 " class="   w-[390px] mt-[10px] lg:w-[313px] xl:w-[370px] md:h-[50px] md:mt-[20px] h-[40px] lg:h-[40px] lg:mt-[20px]  md:w-[357px]  rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px] border-2 border-black" required></div>
-               <div class="mt-[0px] md:mt-[-60px] lg:mt-[-50px] lg:ml-[320px] md:ml-[370px]  xl:ml-[380px]  xl:mt-[-50px]">
-                <ion-icon name="mail-outline" class="lg:mr-[-45px] mr-[-30px]"></ion-icon>
-                <input type="text" placeholder="Email: chukwuma@gmail.com" class=" w-[390px] mt-[10px] lg:w-[313px] md:h-[50px] xl:w-[370px] h-[40px] lg:h-[40px] lg:ml-[15px] md:w-[357px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px]  border-2 border-black" required></div>
-                <div class="xl:mt-[10px]" >
-                    <ion-icon name="eye-outline" class="mr-[-30px]"></ion-icon>
-                    <input type="text" placeholder="Date Applied: 12/3/2024" class="   w-[390px] mt-[10px] lg:w-[313px] h-[40px] xl:w-[370px] md:h-[50px] lg:h-[40px]  md:w-[357px]  rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px]  border-2 border-black" required></div>
-                   <div class="mt-[0px] md:mt-[-70px]  md:ml-[370px] lg:ml-[320px] xl:ml-[380px]  xl:mt-[-70px]">
-                    <ion-icon name="eye-outline" class="lg:mr-[-45px] mr-[-30px]"></ion-icon>
-                <input type="text" placeholder=" Status: Available" class="w-[390px] mt-[10px] lg:w-[313px] h-[40px] xl:w-[370px] md:h-[50px] lg:h-[40px] lg:ml-[15px] lg:mt-[20px] xl:mt-[30px] md:mt-[20px]  md:w-[357px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[20px] border-2 border-black" required><br></div>
+            <form action="" class="ml-[30px]    lg:ml-[60px]   mt-[5px] rounded-[10px]  ">
                 
+                <div class="-w-[30vw] ">
+                <ion-icon name="person-outline" class="mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Name:Paul Chukwuma" class=" w-[65vw] xl:w-[370px] lg:w-[313px] h-[30px] md:h-[40px] lg:h-[40px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] md:text-[20px] lg:text-[20px] border-2 border-black"  required></div>
+                <div class="mt-[0px]    lg:ml-[320px] xl:ml-[380px] lg:mt-[-50px] xl:mt-[-50px]  ">
+                <ion-icon name="person-outline" class=" lg:mr-[-45px] mr-[-30px] "></ion-icon>
+                <input type="text" placeholder="Date of Birth: 21/4/2001" class=" w-[65vw] mt-[5px] md:mt-[10px] xl:w-[370px] lg:w-[313px] h-[30px] md:h-[40px]  lg:h-[40px]   lg:ml-[15px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] md:text-[20px] lg:text-[20px]  border-2 border-black" required></div>
+                <div class="min-w-[30vw]" >
+                <ion-icon name="location-outline" class="mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Location: ikorodu" class=" w-[65vw] mt-[5px] md:mt-[10px]  xl:w-[370px] lg:w-[313px] h-[30px] md:h-[40px]  lg:h-[40px]  lg:mt-[10px]   rounded-[5px] text-purple-800 pl-[30px]  focus:outline-purple-800 placeholder:text-gray-800 text-[15px] md:text-[20px] lg:text-[20px] border-2 border-black" required></div>
+               <div class="mt-[0px]    lg:mt-[-50px] lg:ml-[320px] xl:ml-[380px]  xl:mt-[-50px] ">
+                <ion-icon name="briefcase-outline" class="lg:mr-[-45px] mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Occupation: Banker" class="  w-[65vw] mt-[5px] md:mt-[10px] lg:mt-[10px]  lg:w-[313px]  xl:w-[370px] h-[30px] md:h-[40px] lg:h-[40px]  lg:ml-[15px] rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] md:text-[20px] lg:text-[20px]  border-2 border-black" required></div>
+                 <div class="min-w-[30vw]">
+                <ion-icon name="location-outline" class="mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Home Address: 55,olorunsanu Str, itamaga, ikorodu" class=" w-[65vw] mt-[5px] md:mt-[10px] lg:mt-[10px] xl:w-[755px] lg:w-[630px] h-[30px] md:h-[40px]  lg:h-[40px]   rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] md:text-[20px] lg:text-[20px]  border-2 border-black" required></div>
+                <div class="min-w-[30vw]" >
+                <ion-icon name="location-outline" class="mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Business / Office Address: 55,olorunsanu Str, itamaga, ikorodu" class="  w-[65vw] mt-[5px] md:mt-[10px] lg:mt-[10px]  xl:w-[755px] lg:w-[630px] h-[30px] md:h-[40px] lg:h-[40px]    rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] md:text-[20px] lg:text-[20px] border-2 border-black" required></div>
+                <div class="min-w-[30vw]" >
+                <ion-icon name="phone-portrait-outline" class="mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Phone: 08034567891 " class="   w-[65vw] mt-[5px] md:mt-[10px] lg:w-[313px] xl:w-[370px]   h-[30px] md:h-[40px] lg:h-[40px]  lg:mt-[10px]    rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] lg:text-[20px] md:text-[20px] border-2 border-black" required></div>
+               <div class="mt-[0px]  lg:mt-[-50px] lg:ml-[320px]  xl:ml-[380px]  xl:mt-[-50px] min-w-[30vw]">
+                <ion-icon name="mail-outline" class="lg:mr-[-45px] mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Email: chukwuma@gmail.com" class=" w-[65vw] mt-[5px] md:mt-[10px] lg:w-[313px]  xl:w-[370px] h-[30px] md:h-[40px] lg:h-[40px]  lg:ml-[15px]  rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] lg:text-[20px] md:text-[20px]  border-2 border-black" required><br></div>
+                <div class="xl:mt-[10px]  min-w-[30vw]" >
+                    <ion-icon name="eye-outline" class="mr-[-30px]"></ion-icon>
+                    <input type="text" placeholder="Date Applied: 12/3/2024" class="   w-[65vw] mt-[5px] md:mt-[10px]  lg:mt-[10px] lg:w-[313px] h-[30px] md:h-[40px] xl:w-[370px]  lg:h-[40px]    rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] lg:text-[20px] md:text-[20px]  border-2 border-black" required></div>
+                   <div class="mt-[0px] lg:mt-[-44px]   lg:ml-[320px] xl:ml-[380px]   min-w-[30vw]">
+                    <ion-icon name="eye-outline" class="lg:mr-[-45px] mr-[-30px]"></ion-icon>
+                <input type="text" placeholder="Status: Available" class="w-[65vw] mt-[5px] md:mt-[px] lg:w-[313px]  xl:w-[370px] h-[30px] md:h-[40px]  lg:h-[40px] lg:ml-[15px] lg:mt-[px]   rounded-[5px] text-purple-800 pl-[30px] focus:outline-purple-800 placeholder:text-gray-800 text-[15px] lg:text-[20px] md:text-[20px] border-2 border-black" required></div>
+                             
+                <button type="submit" class="text-white bg-purple-800  ml-[10px] md:ml-[50px]  lg:ml-[80px] xl:ml-[150px] w-[50vw] mt-[10px] md:mt-[20px] lg:w-[455px]   h-[35px] md:h-[40px]   lg:h-[40px] rounded-[20px]   ">Submit</button>
+            
                
             </form>
             
-             </div>
-            </div>
-    </div>
-    <script>
-        const menu = document.getElementById("menu");
-        const dashboard= document.getElementById("dashboard");
-        const search = document.getElementById("search");
-        const profile = document.getElementById("profile");
-        menu.addEventListener("click", function(){
-            dashboard.classList.toggle("hidden");
-            search.classList.toggle("hidden");
-            profile.classList.toggle("hidden");
-        })
-       
-        </script>
-
+              
+                
+            
+        </div>
+               
+        </div>
     
+        <script>
+            const menu = document.getElementById("menu");
+            const dashboard= document.getElementById("dashboard");
+            const search = document.getElementById("search");
+            const profile = document.getElementById("profile");
+            menu.addEventListener("click", function(){
+                dashboard.classList.toggle("hidden");
+                search.classList.toggle("hidden");
+                profile.classList.toggle("hidden");
+            })
+           
+            </script>
+            
 </body>
 </html>
+
+
+<!-- <form action="" class="mx-6"   >
+    <input type="text" placeholder="Incicident" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] pl-3 focus:outline-purple-800 rounded-[5px]" ><br>
+    <input type="text" placeholder="Date of Incident" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+    <input type="text" placeholder="Name" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+    <input type="text" placeholder=" Offender's Name" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+    <input type="text" placeholder=" Offender's Id " class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]" ><br>
+    <input type="text" placeholder="Narration" class="border-2 border-black w-[65vw] h-[45px] lg-h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"> <br>
+    <button type="submit" class="border-2 border-black w-[55vw] h-[45px] lg-h-[40px] my-1 mx-6 rounded-2xl bg-purple-800 text-white">Submit</button>
+</form> -->
+
+
