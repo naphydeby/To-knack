@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Female Dashboard</title>
+    <title>Add Wallet</title>
     <link rel="stylesheet" href="./src/output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     
 </head>
-<body>
-    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px] ">
+<body  >
+    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px]  ">
         
         <!-- search bar -->
         <nav class="flex text-white pt-[20px] lg:pt-[40px] " >
-            <div class="flex">   
+            <div class="flex">
                 <img onclick="menuBtn()" class="w-8 h-8 ml-[40px] lg:hidden" id="menu" src="/asset/menu.png" alt="menu">
 
                 <h1 class=" animate-bounce  pt-[8px] text-purple-800 text-3xl pl-[110px] lg:text-4xl lg:pl-[30px] lg:w-[20vw] font-[700]  " >  TO-KNACK</h1>
@@ -31,9 +31,9 @@
         <!-- End of search bar -->
 
 
-        <div class="lg:flex gap-1 justify-between">
+        <div class="flex gap-1 justify-center lg:justify-between">
 
-            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-4 md:ml-8 lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
+            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-[-70px] md:ml-[-353px] lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
 
                 <a class="flex  text-white ml-4 font-[700] text-[20px]">
                     <ion-icon name="home-outline" class="mt-[-5px] w-10 h-10"></ion-icon>
@@ -56,9 +56,10 @@
             </div>
 
             <div class="" id="content">
-                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] md:[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+                    
 
-                    <div class="">
+                    <div class="" >
 
                         <div class="flex justify-center  lg:justify-between pt-6 px-20">
                             <div class="flex gap-4">
@@ -97,43 +98,52 @@
       
                         </div>
 
-                        <div class="lg:flex justify-center lg:px-10">
-                           <div class=" text-center">
-                               <p class=" mt-[30px] text-white text-3xl font-[500]">Profile</p><br>
-    
-                               <img src="/asset/1 (1).webp" alt="pic" class=" mt-[20px] w-[300px] mx-[auto] md:mx-[auto] lg:w-[300px] h-[300px] lg:h-[300px] rounded-[300px]">
-    
-                               <div class="flex justify-center gap-2">
-                                  <p class="  mt-[10px]  text-white"> Status: <b>Available</b></p>
-                                   <p class="w-[10px] h-[10px] mt-[20px] bg-green-600 rounded-[25px]"></p>
-                               </div>
-                           </div>
-                    
-                           <div class="lg:mt-32 lg:ml-20 mt-4 pl-8 lg:mr-[300px]">
-                               <h2 class=" text-white text-[20px]"> <b>About</b></h2>
-
-                               <div class="">
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] text-white lg:w-[260px]">Name: &nbsp; Alice Felicia</p>
-
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md text-white w-[90%] md:w-[95%] lg:w-[260px]">Date Applied: &nbsp; 21st April, 2023.</p>
-
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 w-[90%] rounded-md md:w-[95%] text-white lg:mt-[10px] lg:w-[260px]">Location:  &nbsp; Ikorodu, Lagos.</p>
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] text-white lg:mt-[10px] lg:w-[260px]">Age:  &nbsp; 24</p>
-                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] lg:w-[260px] text-white lg:mt-[10px]">Email:  alicefelicia@gmail.com</p>  
-                               </div>  
-                           </div>
+                        <div class="">
+                            <div class=" text-center">
+                                <div class="">
+                                    <p class=" mt-[20px] text-white text-3xl font-[500]">Add Wallet</p>
+                                </div>
+                                <br><hr class="hidden lg:block w-[104%] ml-[-40px]">
+                            </div><br>
+                        
+                            <div class="">
+                                <div class="md:w-[500px] md:h-[350px] mx-[auto] pt-6 bg-white text-center rounded-[25px]">
+                                    <p class="text-3xl font-[500]">Payment Method</p>
+                        
+                                    <b class="font-[500]">Wallet Account</b><br><br>
+                        
+                                    <input class="w-[250px] h-[45px] rounded-[25px] bg-gray-300 focus:outline-purple-800 text-center" placeholder="0000-0000-0000-0000" type="text" name="" id=""><br><br>
+                        
+                                    <div class="">
+                                        <a href="#"><p class="font-[500]">Bank Transfer</p></a><br>
+                                       <div class="flex gap-4 md:gap-8 justify-center items-center">
+                                            <img class="w-20 h-16 cursor-pointer" src="/asset/download.png" alt="master card">
+                                            <img class="w-32 h-32 mt-[-20px] cursor-pointer" src="/asset/western Union.png" alt="master card">
+                        
+                                            <img class="w-20 h-20 cursor-pointer" src="/asset/visa.png" alt="master card">
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
                         </div>
+
                     </div>
                 </div>
+            
             </div>
-
-            </div>
-
         </div>
-
     </div>
+    
+           
+           
+           
+           
+            
 
     <script>
+
 
         function menuBtn() {
             const menu = document.getElementById("menu");
@@ -153,17 +163,10 @@
             document.getElementById("content").classList.remove("hidden");
             document.getElementById("menubar").classList.add("hidden");
        }
-        
+       
 
-
-        
-        // menu.addEventListener("click", function(){
-        //     dashboard.classList.toggle("hidden");
-        //     search.classList.toggle("hidden");
-        //     profile.classList.toggle("hidden");
-        // })
        
     </script>
-
 </body>
+
 </html>
