@@ -107,8 +107,8 @@ body{
       position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/perfect\ girl.avif);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/asset/perfect\ girl.avif
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(asset/perfect\ girl.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(asset/perfect\ girl.jpg
   );
   background-size: cover;
   background-position: center;
@@ -170,6 +170,7 @@ body{
        border-radius: 20px;
     }
 
+    
     .sexybg{
       width: 250px;
     }
@@ -186,4 +187,37 @@ body{
             width: 60vw;
             object-fit: cover;
       }
+      .profile-desc{
+            width: 300px;
+      }
     }
+    @media (max-width: 399px) {
+      .profile-desc{
+            width: 280px;
+      }
+      
+    }
+    @media (max-width: 366px) {
+      .profile-desc{
+            width: 250px;
+      }
+      
+    }
+    .footer{
+      position: relative;
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(asset/nikki.webp);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(71, 5, 88, 0.5)), url(asset/nikki.webp
+      );
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: black;
+    }
+ 
+    .mobilenav{
+      display: block;
+      flex-direction: column;
+      background-color: black ;
+  
+     }
