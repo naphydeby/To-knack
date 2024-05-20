@@ -33,15 +33,16 @@
                         <h1 class="font-bold text-lg sm:text-3xl cursor-pointer text-purple-700 animate-pulse jersey-15-regular dm-sans-regular" role="button" >To Nack</h1>
                   </div>
                  
-                  <div class=" space-x-10 mx-5 items-center hidden md:flex" id="navContent">
-                    <div class=" space-x-10">
+                  <div class=" py-2 md:py-0 space-y-2  md:space-y-0 space-x-10 mr-2 md:mx-5  md:items-center hidden  bg-black md:bg-transparent md:flex" id="navContent">
+                    <div  class="cursor-pointer absolute right-[10%] md:hidden" role="button" onclick="exitNav()"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/cancel.png" alt="cancel"/></div>
+                    <div class="space-y-6 md:space-y-0 md:space-x-10  flex flex-col md:flex-row">
                         <a href="#" class="font-semibold text-md hover:text-purple-300 text-purple-400">Home</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Contact</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Blog</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Privacy</a>
                      </div>
                     <a href="gendervalidation.html">
-                    <button class="mr-5 text-white  rounded-xl text-xs md:text-md md:rounded-full bg-gradient-to-r from-purple-600 to-pink-400 border-2 border-purple-600  font-semibold px-5 py-1 md:py-3 text-center w-[100px] md:w-[180px] height-[60px] hover:opacity-7">Sign Up/ Sign In</button>
+                    <button class="mr-5 text-white text-xs md:text-md  rounded-full bg-gradient-to-r from-purple-600 to-pink-400 border-2 border-purple-600  font-semibold px-5 py-1 md:py-3 text-center w-[200px] md:w-[180px] h-[46px] hover:opacity-7">Sign Up/ Sign In</button>
                     </a>
                   </div>
 
@@ -49,7 +50,7 @@
                     <a class=" cursor-pointer md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
                       see more</a>
                   </div> -->
-                   <button class="text-white flex md:hidden mx-8 animate-pulse cursor-pointer" onclick="openNav()" id="dropBtn" role="button">
+                   <button class="text-white flex md:hidden mx-8 animate-pulse cursor-pointer" onclick="openNav()"  role="button" id="dropBtn">
                   
                    <img width="48" height="64" src="https://img.icons8.com/wired/64/FFFFFF/xbox-menu.png" alt="xbox-menu" role="button" />
                   </button> 
@@ -590,9 +591,16 @@
 
     function openNav (){
       console.log('start')
-      dropd.classList.toggle('mobilenav')
+      if(dropd.style.display == "block"){
+        dropd.style.display ="none"
+      }
+      else{
+        dropd.style.display="block"
+      }
     }
-    
+    function exitNav(){
+      dropd.style.display = "none"
+    }
 
     </script>
            
