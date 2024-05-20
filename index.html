@@ -7,23 +7,13 @@
 
       <link rel="stylesheet" href="style.css">
       <script src="https://cdn.tailwindcss.com"></script>
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-     
-      <!-- Swiper Carousel -->
       
-      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   
     
          <!-- Bootstrapicons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-  
 </head>
 <body class="">
        <header class="header2">
@@ -34,7 +24,7 @@
                   </div>
                  
                   <div class=" py-2 md:py-0 space-y-2  md:space-y-0 space-x-10 mr-2 md:mx-5  md:items-center hidden  bg-black md:bg-transparent md:flex" id="navContent">
-                    <div  class="cursor-pointer absolute right-[10%] md:hidden" role="button" onclick="exitNav()"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/cancel.png" alt="cancel"/></div>
+                    <div  class="cursor-pointer exitBtn absolute right-[10%] md:hidden" role="button" onclick="exitNav()"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/cancel.png" alt="cancel"/></div>
                     <div class="space-y-6 md:space-y-0 md:space-x-10  flex flex-col md:flex-row">
                         <a href="#" class="font-semibold text-md hover:text-purple-300 text-purple-400">Home</a>
                         <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Contact</a>
@@ -46,10 +36,7 @@
                     </a>
                   </div>
 
-                  <!-- <div>
-                    <a class=" cursor-pointer md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
-                      see more</a>
-                  </div> -->
+                
                    <button class="text-white flex md:hidden mx-8 animate-pulse cursor-pointer" onclick="openNav()"  role="button" id="dropBtn">
                   
                    <img width="48" height="64" src="https://img.icons8.com/wired/64/FFFFFF/xbox-menu.png" alt="xbox-menu" role="button" />
@@ -467,9 +454,13 @@
         </div>
     </footer>
     
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-              <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
               <script>
                   var typed = new Typed('#el', {
@@ -586,23 +577,35 @@
             }
         }
     });
-    const dropd = document.getElementById('navContent')
-    const button =document.getElementById('dropBtn')
+    const dropd = document.getElementById('navContent');
+        const button = document.getElementById('dropBtn');
+        const exit = document.getElementsByClassName('exitBtn')[0];
 
-    function openNav (){
-      console.log('start')
-      if(dropd.style.display == "block"){
-        dropd.style.display ="none"
-      }
-      else{
-        dropd.style.display="block"
-      }
-    }
+        function openNav() {
+            if (dropd.style.display === "none" || !dropd.style.display) {
+                dropd.style.display = "block";
+                gsap.fromTo(dropd, 
+                    { y: '-100%', opacity: 0 }, 
+                    { y: '0%', opacity: 1, duration: 0.5, ease: 'power1.in' }
+                );
+            } else {
+                gsap.to(dropd, 
+                    { y: '-100%', opacity: 0, duration: 0.5, ease: 'power1.in', onComplete: () => {
+                        dropd.style.display = "none";
+                    }}
+                );
+            }
+        }
     function exitNav(){
-      dropd.style.display = "none"
+      gsap.to(dropd, 
+                    { y: '-100%', opacity: 0, duration: 0.5, ease: 'power1.in', onComplete: () => {
+                        dropd.style.display = "none";
+                    }}
+
+                );
     }
 
     </script>
-           
+    
 </body>
 </html>
